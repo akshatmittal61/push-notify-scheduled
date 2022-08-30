@@ -10,6 +10,8 @@ View the project live: [akshatmittal61.github.io/push-notify-scheduled](https://
 
 [Akshat Mittal](https://akshatmittal61.vercel.app)
 
-# Reference
+# References
 
 [Notification Triggeres: web.dev](https://web.dev/notification-triggers/)
+
+[Service Worker in React JS: GitHub(Jeff Posnik)](https://github.com/jeffposnick/create-react-app/tree/27424cef01518c5f85066f1e0cc22b2ecd599c3e/packages/react-scripts/template/src)
