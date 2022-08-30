@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push Notify Scheduled</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            border: none;
+            outline: none;
+            padding: 1rem 1.5rem;
+            background-color: #4285f4;
+            color: #f0f0f0;
+            font-size: 1.25rem;
+            font-weight: 700;
+            border-radius: 500px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin: 1rem;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="notification-button" id="notification-button">Show Notification</button>
+    <button class="notification-cancel" id="notification-cancel">Cancel Notification</button>
+    <div id="error"></div>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
+    <script src="./service-worker.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
